@@ -57,7 +57,7 @@ class _ItemsTabState extends State<ItemsTab> {
           Align(
             alignment: Alignment.topRight,
             child: ButtonWidget(
-              color: const Color.fromARGB(255, 33, 243, 114),
+              color: const Color.fromARGB(206, 70, 228, 131),
               height: 45,
               width: 150,
               label: 'Add Item',
@@ -92,7 +92,7 @@ class _ItemsTabState extends State<ItemsTab> {
                   ),
                   DataColumn(
                     label: TextWidget(
-                        text: 'Money', fontSize: 18, fontFamily: 'Bold'),
+                        text: 'Items', fontSize: 18, fontFamily: 'Bold'),
                   ),
                   DataColumn(
                     label: TextWidget(
@@ -120,28 +120,28 @@ class _ItemsTabState extends State<ItemsTab> {
                               text: '${i + 1}',
                               fontSize: 14,
                               fontFamily: 'Medium',
-                              color: Colors.grey),
+                              color: Colors.black),
                         ),
                         DataCell(
                           TextWidget(
                               text: data.docs[i]['name'],
                               fontSize: 14,
                               fontFamily: 'Medium',
-                              color: Colors.grey),
+                              color: Colors.black),
                         ),
                         DataCell(
                           TextWidget(
                               text: data.docs[i]['points'].toString(),
                               fontSize: 14,
                               fontFamily: 'Medium',
-                              color: Colors.grey),
+                              color: Colors.black),
                         ),
                         DataCell(
                           TextWidget(
                               text: data.docs[i]['qty'].toString(),
                               fontSize: 14,
                               fontFamily: 'Medium',
-                              color: Colors.grey),
+                              color: Colors.black),
                         ),
                         DataCell(
                           Row(
@@ -166,7 +166,7 @@ class _ItemsTabState extends State<ItemsTab> {
                               ),
                               const SizedBox(width: 10),
                               ButtonWidget(
-                                color: const Color.fromARGB(206, 70, 228, 131),
+                                color: Color.fromARGB(206, 228, 165, 70),
                                 height: 35,
                                 width: 125,
                                 label: 'Edit',
@@ -237,7 +237,7 @@ class AddItemDialog extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               ButtonWidget(
-                color: const Color.fromARGB(255, 33, 243, 114),
+                color: const Color.fromARGB(206, 70, 228, 131),
                 height: 45,
                 width: 150,
                 label: 'Add',
@@ -299,7 +299,7 @@ class EditItemDialog extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               ButtonWidget(
-                color: const Color.fromARGB(255, 33, 243, 114),
+                color: const Color.fromARGB(206, 70, 228, 131),
                 height: 45,
                 width: 150,
                 label: 'Update',
